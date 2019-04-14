@@ -1,0 +1,297 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    margin: 0;
+}
+
+#main{
+width:960px;
+margin:50px auto;
+font-family:raleway;
+}
+.hidden {
+    display: none;
+}
+span{
+color:red;
+}
+
+h1 {
+    color: #FFBC00
+}
+
+hr {
+border:0;
+border-bottom:1px solid #ccc;
+margin-bottom: 30px;
+}
+.checkbox {
+    margin-top: 15px;
+    color: black;    
+}
+
+form{
+    border-radius: 10px;
+    font-family: raleway;
+    border: 2px solid #ccc;
+    padding: 10px 30px;
+    background: white;
+}
+
+input[type=text],input[type=password], input[type=email], input[type=tel]{
+width:270px;
+padding: 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+padding-left: 5px;
+font-size: 16px;
+font-family:raleway;
+}
+
+button[type=submit]{
+width: 100%;
+background-color: lightgreen;
+color: white;
+border: 2px solid lightgreen;
+padding: 10px;
+font-size:20px;
+font-family:raleway;
+cursor:pointer;
+border-radius: 5px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+a{
+text-decoration:none;
+color: cornflowerblue;
+}
+
+i{
+color: cornflowerblue;
+}
+
+p{
+font-size:14px;
+color:red;
+}
+
+input[type=button]{
+    /* width: 100%; */
+    background-color: lightgreen;
+    color: white;
+    border: 2px solid lightgreen;
+    padding: 10px;
+    font-size: 18px;
+    font-family:raleway;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 640px;
+}
+
+header .navbar-brand {
+    height: auto;
+    display: inline-block;
+    width: 256px;
+}
+
+header p {
+    display: inline-block;
+    color: white;
+    font-family: raleway;
+}
+
+header i {
+    color: white;
+    margin: 5px;
+}
+
+header { 
+    background-color: teal;
+}
+
+
+.float-right {
+    float: right;
+    margin-right: 2%;
+}
+
+.form-container {
+    visibility: hidden;
+    width: 350px;
+    margin-right: 10%;
+    margin-top: 30px;
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.hero-container {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    left: 10%;
+    top: 50px;
+}
+
+.hero-container img {
+    display: block;
+    width: 100%;
+}
+
+.promo {
+    width: 30%;
+    margin-top: 30px;
+    top: 10px;
+    position: relative;
+    left: 12%;
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.promo p {
+    font-size: 30px;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: bold;
+    color: white;
+}
+
+.games-container-outer {
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.games-container-inner {
+    width: 600px;
+    margin: auto;
+}
+
+.games-container-inner img {
+    display: inline-block;
+    width: 180px;
+    margin: 8px;
+}
+
+footer {
+    text-align: center;
+    background: teal;
+    position: absolute;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: bold;
+    color: white;
+    padding: 6px;
+    
+}
+.info p {
+    color: black;
+    font-family: raleway;
+}
+
+/* Desktop */
+@media only screen  and (min-width : 1224px) {
+   .form-container {
+       float: right;
+   }
+}
+
+/* Tablets */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .form-container {
+        margin-right: 5%;
+        float:right;
+    }
+    .promo {
+        width: 35%;
+        left: 5%;
+        margin: 30px auto;
+        display: inline-block;
+        padding: 10px;
+    }
+    .games-container-inner {
+        margin-bottom: 90px;
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+    .hero-container {
+        width: 100%;
+        left: 0;
+    }
+    .promo {
+        width: 60%;
+        left: auto;
+        margin: 30px auto;
+        display: block;
+        padding: 10px;
+    }
+
+    .form-container {
+        margin: auto;
+        float: none;
+    }
+
+    .games-container-inner {
+        width: 600px;
+        margin: auto;
+    }
+
+    .games-container-inner img {
+        display: inline-block;
+        width: 180px;
+        margin: 8px;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .games-container-inner {
+        width: 200px;
+        margin: auto;
+    }
+
+    .games-container-inner img {
+        display: inline-block;
+        width: 180px;
+        margin: 8px;
+    }
+}
+
+
+/* Smartphones */
+@media only screen and (max-width : 515px) {
+    header .float-right {
+        display: none;
+    }
+
+    header .navbar-brand {
+        margin: 0 auto;
+        width: 270px;
+        display: block;
+    }
+
+    .form-container {
+        margin: auto;
+        float: none;
+    }
+
+    .hero-container {
+        width: 100%;
+        left: 0;
+    }
+}

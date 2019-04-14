@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+</head>
+
+<header>
+    <a class="navbar-brand" href="index.html"><img src="img/banner_logo_cc.png" width="256px"></a>
+    <div class="float-right">
+        <p><i class="fas fa-shield-alt"></i>Data Protected</p>
+        <p><i class="fas fa-money-check"></i>Secure Payments</p>
+    </div>
+</header>
+
+<div class="outer">
+  <div class="promo">
+    <p>Get Your</p>
+    <p>100% up to $400</p>
+    <p>+100 FREE SPINS</p>
+  </div>
+  <div class="form-container">
+      <form onsubmit="secondFormValidation()">
+          <h1>One more step to finish your account</h1>
+          <p id="head" class="hidden">* Please fill all fields in this form to create an account.</p>
+          <hr>
+      
+          <label for="text"><b>Address 1</b></label>
+          <input type="text" placeholder="Address 1" name="address1" id="address1" required>
+
+          <label for="text"><b>Address 2</b></label>
+          <input type="text" placeholder="Address 2" name="address2" id="address2" required>
+
+          <label for="text"><b>City</b></label>
+          <input type="text" placeholder="City" name="city" id="city" required>
+
+          <label for="text"><b>Postal Code</b></label>
+          <input type="tel" placeholder="Postal Code" name="postalCode" id="postalCode" required>
+
+          <label for="text"><b>Phone Number</b></label>
+          <input type="tel" placeholder="Phone Number" name="phoneNumber" id="city" required>             
+        
+            
+          <p class="checkbox">
+              <input type="checkbox" name="bonus" id="checkbox" onclick="isChecked()" style="margin-bottom:15px">
+              Do you have a bonus code?
+          </p>
+          <div id="bonus" class="hidden">
+              <label for="text"><b>Bonus Code</b></label>
+              <p id="bonusMsg" class="hidden">* Please enter your bonus code *</p>
+              <input type="tel" placeholder="Bonus Code" id="bonusCode" name="bonusCode">
+          </div>
+
+    
+          <div class="clearfix">
+              <a href="#"><button type="submit" class="submit">Sign up</button></a>            
+        </div>
+      </form>
+  </div>
+
+  <div class="hero-container">
+    <img src="img/flinstones.png">
+  </div>
+
+  <div class="games-container-outer">
+      <div class="games-container-inner">
+          <img src="img/casino_1.png">
+          <img src="img/casino_2.png">
+          <img src="img/casino_3.png">
+      </div>
+    </div>
+</div>
+    
+<footer>    
+    <p>Posted by: Veronica Yordanova</p>
+    <p>Contact information: <a href="mailto:yordanova.veronica@gmail.com">
+    yordanova.veronica@gmail.com</a></p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script src="scripts/script.js"></script> 
+  </html>
